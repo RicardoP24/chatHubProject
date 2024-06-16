@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="containerMaior">
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id="registerForm">
+                    <h1>Create Account</h1>
+                    <input type="text" id="registerUsername" placeholder="Username" required />
+                    <input type="password" id="registerPassword" placeholder="Password" required />
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="signInLink">Sign In</a></p>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="loginForm">
+                    <h1>Sign in</h1>
+                    <input type="text" id="loginUsername" placeholder="Username" required />
+                    <input type="password" id="loginPassword" placeholder="Password" required />
+                    <button type="submit">Sign In</button>
+                    <p>Don't have an account? <a href="#" id="signUpLink">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-window" id="chatWindow"></div>
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Type your message here...">
+                <button id="sendButton">Send</button>
+            </div>
+
+            <h1 id="userLogado"></h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
